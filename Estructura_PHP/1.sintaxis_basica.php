@@ -57,6 +57,19 @@ $lang=[
     'en'=>'ingles',
 ];
 
+//ASIGNACION POR REFERENCIA 
+//Es apuntar sin hacer copia, significa observar
+$b="jose";
+$name=$b;
+echo $name;
+
+// VARIABLES VAIABLES
+$app='name';
+$name='platzi';
+
+echo $app; //me asigna name como tal
+echo $$app;// me muestra platzi debido que subasigna la variable $name
+
 //ARIMETICAS
 echo "Suma 2+2" . ((int)2+(int)2);
 echo "Resta 2-2" . ((int)2-(int)2);
@@ -82,9 +95,4 @@ var_dump($resu);
 $res=$v1<=>$v2;//operador speashi 3 opciones de resultado 0 si son iguales -1 el primer elemento sea menor y 1 si el primer elemento es mayor
 echo $res;
 
-// VARIABLES VAIABLES
-$app='name';
-$name='platzi';
 
-echo $app; //me asigna name como tal
-echo $$app;// me muestra platzi debido que subasigna la variable $name
